@@ -1,0 +1,160 @@
+.root {
+    background-color: black;
+}
+
+.color1{
+  background-color: blue;
+}
+
+.color2{
+  background-color: yellow;
+}
+
+.custom-input {
+  border-color: green;
+}
+
+/*#EDEBCB*/
+.footer {
+  background-color: var(--bs-gray-300);
+  color:black;
+  padding: 10px;
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 15vw; 
+  text-align: center;
+  margin-top: 4%;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3%;
+  }
+  
+.items-align{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  flex-wrap: wrap;
+}
+
+.items-align span{
+  color:darkgreen
+}
+
+.footer-text {
+  font-size: 12px; /* Ajusta este valor al tamaño de fuente */
+  text-align: left; /* Añade esta línea */
+}
+
+.footer-autor {
+  font-size: 11px; /* Ajusta este valor al tamaño de fuente */
+  text-align: center; /* Añade esta línea */
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: darkgoldenrod;
+}
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-image {
+  width: 120px;
+  height: auto; /* esto mantendrá las proporciones de la imagen */
+  border-radius: 100%;
+}
+.social-icons i {
+  margin: 0 3px; /* Añade esta línea */
+}
+
+.custom-row {
+  height: 120px; /* ajusta esta altura según tus necesidades */
+}
+
+.fondo-about{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.fondo-about div {
+  flex: 1;
+}
+
+.img-chef {
+  width: 100%;
+  height: auto; /* esto mantendrá las proporciones de la imagen */
+  border-radius: 5%;
+}
+
+.about-text {
+  margin-right: 20px;
+}
+
+.justified-text {
+  text-align: justify;
+}
+
+.centered-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* contenedor ocupa toda la altura de la ventana del navegador */
+}
+
+.centered-404 img {
+  max-width: 100%;  /* Asegura que la imagen no se salga de los límites del contenedor o pantalla */
+}
+
+  @media (max-width: 992px) {
+    .grid-layout {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    .footer-text {
+      font-size: 11px; /* Ajusta este valor al tamaño de fuente */
+      text-align: left; /* Añade esta línea */
+    }
+
+    .footer-autor {
+      font-size: 11x; 
+      text-align: center; 
+    }
+
+    .custom-row {
+      height: 230px; 
+    }
+
+    .footer {
+      height: 60vw; 
+    }
+
+    .fondo-about {
+      flex-direction: column;
+    }
+
+    .about-text {
+      margin-top: 20px;
+    }
+    
+}
+
+
+
+
