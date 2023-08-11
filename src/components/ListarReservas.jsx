@@ -28,7 +28,7 @@ export const ListarReservas = () => {
             <div className="row">
                 <div className="col">
                     <div className="d-grid gap-2">
-                        <Link to='create' className='btn btn-success my-2 p-2'>
+                        <Link to='/CrearReserva' className='btn btn-success my-2 p-2'>
                             Crear Reserva
                         </Link>
                     </div>
@@ -49,10 +49,10 @@ export const ListarReservas = () => {
                                     <td>{x.nombre}</td>
                                     <td>{x.apellido}</td>
                                     <td>{x.correo}</td>
-                                    <td>{x.fecha.toDate().toLocaleDateString()}</td>
+                                    <td>{x.fecha}</td>
                                     <td>{x.nropersonas}</td>
                                     <td>
-                                        <Link to={`edit${x.id}`} className="btn btn-warning mx2">Editar</Link>
+                                        <Link to={`edit/${x.id}`} className="btn btn-warning mx2">Editar</Link>
                                         <button className='btn btn-danger mx2'>Eliminar</button> 
                                         {/* Aquí corregí la clase del botón de 'btn btn.danger' a 'btn btn-danger' */}
                                     </td> 

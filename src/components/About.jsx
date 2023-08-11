@@ -35,7 +35,7 @@ export const About = () => {
                   <Form.Label>Ingresar consulta</Form.Label>
                   <Form.Control className="custom-input" as="textarea" rows={5} />
               </Form.Group>
-              <Button type="submit" variant="secondary">Enviar</Button>
+              <Button type="button" variant="secondary">Enviar</Button>
             </Form>
         </div>
       </div>
