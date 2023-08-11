@@ -25,8 +25,10 @@ export const CrearReserva = () => {
 
     /* Función assDoc (asincrona) propia de Firebase para registrar en BD */
     /* el ID del nuevo registro nuevo se crea automáticamente */
-     addDoc(userCollectionRef, {nombre: nombre, apellido: apellido, correo: correo, fecha: fecha, nropersonas: nropersonas})
+     await addDoc(userCollectionRef, {nombre: nombre, apellido: apellido, correo: correo, fecha: fecha, nropersonas: nropersonas})
 
+     alert("Registro ingresado exitosamente")
+     
      navigate('/ListarReservas')
   }
 
