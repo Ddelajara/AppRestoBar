@@ -52,7 +52,7 @@ export const ListarReservas = () => {
                                     <td>{x.fecha}</td>
                                     <td>{x.nropersonas}</td>
                                     <td>
-                                        <Link to={`edit/${x.id}`} className="btn btn-warning mx2">Editar</Link>
+                                        <Link to={`/EditarReserva/${x.id}`} className="btn btn-warning mx2">Editar</Link>
                                         <button className='btn btn-danger mx2'>Eliminar</button> 
                                         {/* Aquí corregí la clase del botón de 'btn btn.danger' a 'btn btn-danger' */}
                                     </td> 

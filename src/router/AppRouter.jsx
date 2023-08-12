@@ -5,6 +5,7 @@ import { MenuNav } from "../components/MenuNav"
 import { NotFound } from "../components/NotFound"
 import { ListarReservas } from "../components/ListarReservas"
 import { CrearReserva } from "../components/CrearReserva"
+import { EditarReserva } from "../components/EditarReserva"
 
 export const AppRouter = () => {
   return (
@@ -16,6 +17,7 @@ export const AppRouter = () => {
             <Route path='About' element={<About />}/>
             <Route path='ListarReservas' element={<ListarReservas />}/>
             <Route path='CrearReserva' element={<CrearReserva />}/>
+            <Route path='EditarReserva/:id' element={<EditarReserva />}/>
             <Route path='*' element={<NotFound />}/>
         </Routes>
     </>
