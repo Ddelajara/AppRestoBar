@@ -12,7 +12,7 @@ export const EditarReserva = () => {
     const [correo, setCorreo] = useState('')
     const [fecha, setFecha] = useState('')
     const [nropersonas, setNropersonas] = useState(0)
-  
+
     const {id} = useParams()
 
 
@@ -47,7 +47,7 @@ export const EditarReserva = () => {
 
         await updateDoc(myReserv, data)
         alert("Registro actualizado exitosamente")
-     
+
         navigate('/ListarReservas')
     
     }
@@ -65,7 +65,7 @@ export const EditarReserva = () => {
             <form onSubmit={onStore}>
                 <div className="mb-3">
                   <label className="form-label">Nombre:</label><br/>
-                  <input  type="text" 
+                  <input  type="text"
                           className="form-control" 
                           value={(nombre)}
                           onChange={(e)=>setNombre((e.target).value)}

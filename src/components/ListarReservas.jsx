@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { collection, documentId, getDocs } from "firebase/firestore"
 import { db } from "../assets/config/firebase"
+import { MensajeConfirma } from "../assets/fnEliminaReserva"
 
 export const ListarReservas = () => {
 
@@ -11,16 +12,15 @@ export const ListarReservas = () => {
 
     const getReservas = async () =>{
         const data = await getDocs(reservaCollectionRef)
-        // console.log('data', data)
         setReserva(
             data.docs.map(doc => ({...doc.data(), id: doc.id}))
         )
-        console.log(reserva)
+
     }
 
     useEffect(() =>{
         getReservas()
-    }, [])
+    }, [reserva])
 
   return (
     <>
@@ -55,8 +55,10 @@ export const ListarReservas = () => {
                                         <Link to={`/EditarReserva/${x.id}`} className="btn btn-warning">Editar</Link>
                                     </td>
                                     <td>    
-                                        <button className='btn btn-danger'>Eliminar</button> 
-                                        {/* Aquí corregí la clase del botón de 'btn btn.danger' a 'btn btn-danger' */}
+                                        <button 
+                                            className='btn btn-danger'
+                                            onClick = {() => {MensajeConfirma(x.id)}}
+                                            >Eliminar</button> 
                                     </td> 
                                 </tr>
                             ))}
