@@ -1,8 +1,35 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Proyecto-APP-Restaurante
+Proyecto #3 del Bootcamp WebFullStack donde se implementa un sitio WEB relacionado con Ganstromía incluyendo un CRUD de Reservas contra Firebase
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este proyecto tiene como objetivo el consumir una API y relacionar los datos con la
+librería Chart.js  El trabajo se desarrolla en un entorno Node.js con aplicaciones
+de modularización.
+
+
+## Construido con 🛠️
+
+Herramientas utilizadas para crear el proyecto:
+
+* REACT + VITE - Estructura del sitio web.
+* CSS - Estilos y diseño visual, usando Pisco css
+* JavaScript - Lógica y funcionalidad.
+* Librerias Bootstrap - swettAlert2
+* Netfily para el despliegue de la pagina.
+
+## Funcionalidad
+
+* Cuenta con una pagina principal (home) donde se despliega un Navabar, un Carousel y Cards.  EL home no tiene mayor funcionalidad que la de el despliegue de información como para el cumplimiento del uso de componentes.
+
+* Existe un componente de quienes somos donde se usan imagenes, mapas y un formulario de contacto como referencial (no tiene función activa).
+
+* Componente de Reservas, donde se aplican los código del CRUD contra un Firebase
+  Funciona bien si es que no se ha acabado la quota de consultas (es una conexión free)
+
+* Link de Prueba 
+
+https://apprestobar.netlify.app/
+
