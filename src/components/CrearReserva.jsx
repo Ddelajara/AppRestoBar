@@ -3,6 +3,12 @@ import { collection, addDoc } from "firebase/firestore"
 import { db } from "../assets/config/firebase"
 import { useNavigate } from "react-router-dom"
 
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
+
+
 export const CrearReserva = () => {
 
   const [nombre, setNombre] = useState('')
@@ -18,16 +24,17 @@ export const CrearReserva = () => {
   const onStore = async () =>{
     event.preventDefault();
 
-      // Convertir la fecha string a un objeto Date de JavaScript
-      //const dateObj = new Date(fecha);
-      // Convertir el objeto Date a un Timestamp de Firestore
-      //const timestamp = firebase.firestore.Timestamp.fromDate(dateObj);
-
-    /* Función assDoc (asincrona) propia de Firebase para registrar en BD */
+    /* Función addDoc (asincrona) propia de Firebase para registrar en BD */
     /* el ID del nuevo registro nuevo se crea automáticamente */
      await addDoc(userCollectionRef, {nombre: nombre, apellido: apellido, correo: correo, fecha: fecha, nropersonas: nropersonas})
 
-     alert("Registro ingresado exitosamente")
+     MySwal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Your work has been saved',
+      showConfirmButton: false,
+      timer: 1500
+    })
      
      navigate('/ListarReservas')
   }
