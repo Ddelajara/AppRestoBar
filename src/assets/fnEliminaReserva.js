@@ -28,7 +28,7 @@ export const MensajeConfirma = (id) =>{
           Swal.fire(
             'Eliminado!',
             'Reserva ha sido eliminada.',
-            'Satisfactoriamente'
+            'success'
           )
         }
       })

@@ -31,7 +31,7 @@ export const CrearReserva = () => {
      MySwal.fire({
       position: 'center',
       icon: 'success',
-      title: 'Your work has been saved',
+      title: 'Tu reserva ha sido registrada!',
       showConfirmButton: false,
       timer: 1500
     })
