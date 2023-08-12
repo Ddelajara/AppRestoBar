@@ -15,20 +15,20 @@ const EliminaReserva = async (id) =>{
 
 export const MensajeConfirma = (id) =>{
     MySwal.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
-        icon: 'warning',
+        title: 'Estas seguro de eliminar?',
+        text: "No podrás revertir el cambio!",
+        icon: 'advertencia',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
+        confirmButtonText: 'Si, eliminar!'
       }).then((result) => {
         if (result.isConfirmed) {
             EliminaReserva(id)
           Swal.fire(
-            'Deleted!',
-            'Your file has been deleted.',
-            'success'
+            'Eliminado!',
+            'Reserva ha sido eliminada.',
+            'Satisfactoriamente'
           )
         }
       })
