@@ -121,6 +121,13 @@
   max-width: 100%;  /* Asegura que la imagen no se salga de los límites del contenedor o pantalla */
 }
 
+/* styles.css */
+.id-style {
+  font-size: 18px;
+  color: red;
+}
+
+
   @media (max-width: 992px) {
     .grid-layout {
       grid-template-columns: 1fr;

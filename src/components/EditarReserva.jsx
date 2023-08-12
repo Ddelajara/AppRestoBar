@@ -34,8 +34,6 @@ export const EditarReserva = () => {
         }
     }
 
-    // const userCollectionRef = collection(db, 'reservas')
-
     const onStore = async (event) => {
         event.preventDefault();
         const myReserv = doc(db, 'reservas', id)
@@ -50,7 +48,7 @@ export const EditarReserva = () => {
         await updateDoc(myReserv, data)
         alert("Registro actualizado exitosamente")
      
-        // navigate('/ListarReservas')
+        navigate('/ListarReservas')
     
     }
   
@@ -63,7 +61,7 @@ export const EditarReserva = () => {
       {/* Formulario */}
       <div className="row">
         <div className="col">
-            <h2>Editar reserva {id}</h2>
+        <h2>Editar reserva: <span className="id-style">{id}</span></h2>
             <form onSubmit={onStore}>
                 <div className="mb-3">
                   <label className="form-label">Nombre:</label><br/>
