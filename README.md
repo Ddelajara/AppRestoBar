@@ -5,9 +5,8 @@ Proyecto #3 del Bootcamp WebFullStack donde se implementa un sitio WEB relaciona
 
 ## Descripción
 
-Este proyecto tiene como objetivo el consumir una API y relacionar los datos con la
-librería Chart.js  El trabajo se desarrolla en un entorno Node.js con aplicaciones
-de modularización.
+Este proyecto tiene como objetivo trabajar con componentes REACT, REACT ROUTER
+Firebase y librerías JS
 
 
 ## Construido con 🛠️
